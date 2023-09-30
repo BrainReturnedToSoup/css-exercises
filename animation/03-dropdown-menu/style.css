@@ -29,4 +29,19 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
+.dropdown-menu.visible {
+  animation-name: expand;
+  animation-duration: 0.5s;
+  animation-direction: both;
 
+  transform-origin: top;
+}
+
+@keyframes expand {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
